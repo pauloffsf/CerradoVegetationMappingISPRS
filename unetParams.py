@@ -77,7 +77,7 @@ CLSPRED_FILE_STR_30 = 'CL3'
 #Model Training and Testing Params
 GPUS = '0'  # GPU indices to restrict usage
 NUM_CHANNELS_S1 = 7
-NUM_CHANNELS_S2 = 10 =
+NUM_CHANNELS_S2 = 10
 S1_IN_DB = False
 BATCH_SZ = 5
 IMG_SZ = (384, 384)  # this code assumes all images in the training set have the same numbers of rows and columns
