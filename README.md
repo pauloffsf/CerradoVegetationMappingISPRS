@@ -61,3 +61,5 @@ After analysing the Graph and determining the Threshold, we can use the function
 The accuracy assessment according to the Reference Map is performed directly when doing the Generalization tests, by the functions in MetricsCalc.py
 For the point-wise accuracy assessment, the functions are presented in PointTestingMapBiomas.py (for the MapBiomas points) and PointTesting.py for the Bendini et. al. (2020) field work points. With the resulting confusion matrixes, the user must apply the Olofsson, et. al. (2014) protocol (code for the protocol was not produced and the results for the article were produced on a excel sheet).
 
+## Citation:
+
