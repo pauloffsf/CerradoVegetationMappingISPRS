@@ -3,7 +3,6 @@ import numpy as np
 from glob import glob
 import tifffile
 import cv2
-import findpeaks
 
 from tensorflow.keras.applications import imagenet_utils
 from tensorflow.keras.utils import to_categorical
