@@ -1,7 +1,6 @@
 from tensorflow.keras import backend as K
 import numpy as np
 import tensorflow as tf
-import tensorflow_probability as tfp
 
 # Helper function to enable loss function to be flexibly used for 
 # both 2D or 3D image segmentation - source: https://github.com/frankkramer-lab/MIScnn
@@ -536,14 +535,3 @@ def cal_focal_loss(alpha=None, beta=None, gamma_f=2.):
         return focal_loss
         
     return loss_function
-
-
-
-def calibrationLoss(num_bins=10):
-	def loss_function(y_true, y_pred):
-		y_true = tf.cast(y_true, tf.int32)
-		print(tf.shape(y_true))
-		print(tf.shape(y_pred))
-		return tfp.stats.expected_calibration_error(num_bins=num_bins, logits=y_pred, labels_true=y_true)
-
-	return loss_function
