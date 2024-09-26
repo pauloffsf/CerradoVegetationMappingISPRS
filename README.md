@@ -62,4 +62,18 @@ The accuracy assessment according to the Reference Map is performed directly whe
 For the point-wise accuracy assessment, the functions are presented in PointTestingMapBiomas.py (for the MapBiomas points) and PointTesting.py for the Bendini et. al. (2020) field work points. With the resulting confusion matrixes, the user must apply the Olofsson, et. al. (2014) protocol (code for the protocol was not produced and the results for the article were produced on a excel sheet).
 
 ## Citation:
+Please, use the Bibtex citation above if any part of code is used:
 
+@article{SILVAFILHO2024405,
+title = {Mapping the Brazilian savanna’s natural vegetation: A SAR-optical uncertainty-aware deep learning approach},
+journal = {ISPRS Journal of Photogrammetry and Remote Sensing},
+volume = {218},
+pages = {405-421},
+year = {2024},
+issn = {0924-2716},
+doi = {https://doi.org/10.1016/j.isprsjprs.2024.09.019},
+url = {https://www.sciencedirect.com/science/article/pii/S0924271624003575},
+author = {Paulo {Silva Filho} and Claudio Persello and Raian V. Maretto and Renato Machado},
+keywords = {Brazilian savanna (Cerrado), Deep learning, Semantic segmentation, Uncertainty quantification, Sentinel data, Hierarchical classification, Noisy dataset},
+abstract = {The Brazilian savanna (Cerrado) is considered a hotspot for conservation. Despite its environmental and social importance, the biome has suffered a rapid transformation process due to human activities. Mapping and monitoring the remaining vegetation is essential to guide public policies for biodiversity conservation. However, accurately mapping the Cerrado’s vegetation is still an open challenge. Its diverse but spectrally similar physiognomies are a source of confusion for state-of-the-art (SOTA) methods. This study proposes a deep learning model to map the natural vegetation of the Cerrado at the regional to biome level, fusing Synthetic Aperture Radar (SAR) and optical data. The proposed model is designed to deal with uncertainties caused by the different resolutions of the input Sentinel-1/2 images (10 m) and the reference data, derived from Landsat images (30 m). We designed a multi-resolution label-propagation (MRLP) module that infers maps at both resolutions and uses the class scores from the 30 m output as features for the 10 m classification layer. We train the model with the proposed calibrated dual focal loss function in a 2-stage hierarchical manner. Our results reached an overall accuracy of 70.37%, representing an increase of 15.64% compared to a SOTA random forest (RF) model. Moreover, we propose an uncertainty quantification method, which has shown to be useful not only in validating the model, but also in highlighting areas of label noise in the reference. The developed codes and dataset are available on Github.}
+}
